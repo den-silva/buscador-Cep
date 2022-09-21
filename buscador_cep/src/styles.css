@@ -1,0 +1,94 @@
+.container{
+    color: aliceblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#330867,#026b6b );
+}
+
+.title{
+    font-size: 60px;    
+}
+
+.containerInput{
+
+    padding: 20px;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;   
+    
+}
+
+.containerInput input{
+    color: white;
+    background: transparent;
+    outline: none;
+    border: 0;
+    text-decoration: overline;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-right: 15px;
+
+}
+
+.containerInput input::placeholder{
+    color: white;
+    
+}
+
+.containerInput input:focus{
+    color: white;
+    background-color: rgba(0,0, 0,0.45 );
+    border-radius: 8px;
+
+}
+
+.buttonSearch{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.buttonSearch:hover{
+ 
+    background-color: rgba(0,0, 0,0.45 );
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0,0, 0,0.45 );
+    padding: 15px;
+    border-radius: 8px;
+    width: 500px;
+}
+
+.main h2{
+    margin: 10px 0;
+}
+
+.main span{
+    margin-bottom: 5px;
+}
+
+@media(max-width: 640px) {
+    .title{
+        font-size: 45px;
+    }
+    .main h2{
+        font-size: 20px
+    }
+    .main{
+        width: 70%;
+    }
+    .main span{
+        font-size: 15px;
+    }
+}
